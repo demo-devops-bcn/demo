@@ -1,0 +1,15 @@
+name: docker
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 1-23 * * 1-5'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - run: docker-compose --help
