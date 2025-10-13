@@ -9,19 +9,19 @@ registries:
 updates:
 
   # GitHub actions
-  - package-ecosystem: github-actions
-    directories:
-      - '/'
-    schedule:
-      interval: "daily"
-    groups:
-      github-actions:
-        patterns:
-          - "*"
+#  - package-ecosystem: github-actions
+#    directories:
+#      - '/'
+#    schedule:
+#      interval: "daily"
+#    groups:
+#      github-actions:
+#        patterns:
+#          - "*"
 
-  - package-ecosystem: "docker"
-    directories:
-      - '/'
-    registries: "*"
-    schedule:
-      interval: "daily"
+#  - package-ecosystem: "docker"
+#    directories:
+#      - '/'
+#    registries: "*"
+#    schedule:
+#      interval: "daily"
